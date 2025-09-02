@@ -1,8 +1,10 @@
-# Backend Setup
+# Backend
 
 First, I created a custom pagination class called `PostPagination`. This controls infinite scrolling on the frontend. By default, it returns 10 posts per page, but I’ve also allowed the client to change the page size through a query parameter, up to a maximum of 50.
 
 Next, I built the `PostListView` using Django REST Framework’s `ListAPIView`. This endpoint returns a paginated list of posts. Each post is ordered by timestamp, with the latest posts appearing first. For each post, I also include up to 3 of its most recent comments, along with the post’s author, text, timestamp, and comment count.
+
+## Backend Setup
 
 ```git clone https://github.com/rishee10/CharacterHub_Assessment.git```
 
@@ -32,7 +34,16 @@ Next, I built the `PostListView` using Django REST Framework’s `ListAPIView`. 
 
 ```/api/posts```
 
-# Frontend Setup
+# Frontend
+
+I built this with Vue.js, made it fully responsive, and picked two main improvements:
+ 
+1. A **stylish navbar** with animations and login/signup actions.
+2. A **cinematic hero banner** using the movie poster as a backdrop.
+    
+Together, these give the page a more modern and professional feel while staying usable.”
+
+## Frontend Setup
 
 ```npm install```
 
